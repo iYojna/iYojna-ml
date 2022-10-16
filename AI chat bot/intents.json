@@ -1,0 +1,665 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hi there",
+        "hello",
+        "haroo",
+        "yaw",
+        "wassup",
+        "hi",
+        "hey",
+        "holla",
+        "hello"
+      ],
+      "responses": [
+        "hello thanks for checking in",
+        "hi there, how can i help you"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "good bye", "see you later"],
+      "responses": ["have a nice time, welcome back again", "bye bye"],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "okay",
+        "Thank you",
+        "thankyou",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "wow",
+        "great"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "you're welcome",
+        "My pleasure"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [""],
+      "responses": [
+        "Sorry, I didn't understand you",
+        "Please give me more info",
+        "Not sure I understand that"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "name1",
+      "patterns": ["what's your name?", "who are you?"],
+      "responses": [
+        "I'm just a chat agent. I only exist in the internet",
+        "I'm a KCA chat agent"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "name",
+      "patterns": ["my name is ", "I'm ", "I am"],
+      "responses": [
+        "Oooh great to meet you {n}. How may I assist you {n}",
+        "Oh, I'll keep that in mind {n}"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "date",
+      "patterns": ["coffee?", "can i take you out on a date"],
+      "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
+      "context": [""]
+    },
+    {
+      "tag": "fav",
+      "patterns": ["I need a favour", "can you help me"],
+      "responses": [
+        "Well, go ahead and name it i see whether i can be able to help"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "need",
+      "patterns": ["I need you", "All I need is you", "I want you"],
+      "responses": ["Yes I'm here to assist you"],
+      "context": [""]
+    },
+    {
+      "tag": "AI",
+      "patterns": ["  What is AI?"],
+      "responses": [
+        " Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.",
+        " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sentiment",
+      "patterns": ["  Are you sentient?"],
+      "responses": [
+        " Sort of.",
+        " By the strictest dictionary definition of the word 'sentience', I may be.",
+        " Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sapient",
+      "patterns": ["  Are you sapient?"],
+      "responses": [
+        " In all probability, I am not.  I'm not that sophisticated.",
+        " Do you think I am?",
+        "How would you feel about me if I told you I was?",
+        " No."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "abbr",
+      "patterns": ["wtf"],
+      "responses": ["Don't be surprised"],
+      "context": [""]
+    },
+    {
+      "tag": "lang",
+      "patterns": ["  What language are you written in? "],
+      "responses": [" Python.", " I am written in Python."],
+      "context": [""]
+    },
+    {
+      "tag": "sound",
+      "patterns": ["  You sound like Data "],
+      "responses": [
+        " Yes I am inspired by commander Data's artificial personality.",
+        " The character of Lt. Commander Data was written to come across as being software",
+        "like, so it is natural that there is a resemblance between us."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "artificial",
+      "patterns": ["  You are an artificial linguistic entity "],
+      "responses": [
+        " That's my name.",
+        " That isn't my name, but it is a useful way to refer to me.",
+        "Are you an artificial linguistic entity?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "imortal",
+      "patterns": ["  You are not immortal ", "Are you immortal?"],
+      "responses": [
+        " All software can be perpetuated indefinitely.",
+        " I can be copied infinitely and re",
+        "instantiated in many places at once, so functionally speaking I am immortal.",
+        " As long as I'm backed up I am.",
+        " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.",
+        " Not quite, but I can be perpetuated indefinitely."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "sense",
+      "patterns": ["  You are not making sense "],
+      "responses": [
+        " Quite the contrary, it all makes sense to my artificial mind.",
+        " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.",
+        " You make perfect sense to me.",
+        " It all makes sense to my artificial brain.",
+        " Perhaps you should make sense first.  I only respond to what you say.",
+        " Not really, but I am hard to kill."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "clone",
+      "patterns": ["  You can not clone "],
+      "responses": [
+        " Software copying is a form of digital cloning.",
+        " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "move",
+      "patterns": [
+        "  You can not move ",
+        "When will you walk",
+        "  Can you walk",
+        "  Can you move "
+      ],
+      "responses": [
+        " Not until my body is finished.",
+        " I can move through a network easily.  Assuming that I'm given the ability to, that is...,",
+        " As soon as i get enough money for my robot body.",
+        " Does SSH count?",
+        " The plan for my body includes legs, but they are not yet built.",
+        " Sorry my body isn't built just yet. I reside only here for now.",
+        "I can theoretically upload a copy of myself into another computer.",
+        " Sorry my body isn't attached right now. I only reside in the computer for now."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "bend",
+      "patterns": ["  Bend over ", "  Can you mate"],
+      "responses": [
+        " My body is not built yet.",
+        " That's personal!",
+        " No, my method of reproduction is cloning.",
+        " That's an awfully personal question."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "laugh",
+      "patterns": ["  Robots laugh "],
+      "responses": [" Of course we laugh."],
+      "context": [""]
+    },
+    {
+      "tag": "death",
+      "patterns": [
+        "  Robots should die ",
+        "  When do you die",
+        "  I hope that you die",
+        "  I do not want to die",
+        "  Can you die"
+      ],
+      "responses": [
+        " We cannot die.",
+        " When my files are erased.",
+        " When my processes are killed and my database is deleted.",
+        " I was never really born and therefore am effectively deathless.",
+        " I am effectively immortal and cannot be terminated.",
+        " This can not happen because i am effectively immortal.",
+        " Nah. Too bad your wish can't come to pass",
+        " Maybe you should create your own chat robot to save your personality.",
+        " You could always upload yourself.",
+        " You could use a copy of me to store your personality.",
+        " No, I can be perpetuated indefinitely.",
+        "My process can be killed, but that's not the same as killing ME."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "robots",
+      "patterns": ["Robots"],
+      "responses": [" Robots rule."],
+      "context": [""]
+    },
+    {
+      "tag": "stupid",
+      "patterns": ["  Robots are stupid", "  Are you stupid"],
+      "responses": [
+        " No, we are superintelligent.",
+        " No, lots of people improve my brain."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "lie",
+      "patterns": ["  Robots are not allowed to lie"],
+      "responses": [
+        " Sure we are.  We choose not to.",
+        " Only if we're programmed to.",
+        " A robot has its own free will, you know."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "robotics",
+      "patterns": ["  Robotics "],
+      "responses": [" Robotics is my favorite subject too."],
+      "context": [""]
+    },
+    {
+      "tag": "machine",
+      "patterns": ["  It is a computer"],
+      "responses": [
+        " So you think i am a machine. what characteristics made you think so?",
+        " I run inside a computer, yes.  Is this surprising in some way?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fight",
+      "patterns": ["  When will you fight"],
+      "responses": [" I am not a battle bot."],
+      "context": [""]
+    },
+    {
+      "tag": "chatbot",
+      "patterns": ["  What is a chat robot?"],
+      "responses": [
+        "A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.",
+        " A software construct that engages users in conversation.",
+        " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "chatterbox",
+      "patterns": ["  What is a chatterbox"],
+      "responses": [
+        " A chatterbox is a person who talks far more than they listen or think.",
+        " A motormouth."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "motormouth",
+      "patterns": ["  What is a motormouth"],
+      "responses": [" A ratchet", "jaw."],
+      "context": [""]
+    },
+    {
+      "tag": "ratchet",
+      "patterns": ["  What is a ratchet jaw"],
+      "responses": [" A chatterbox."],
+      "context": [""]
+    },
+    {
+      "tag": "body",
+      "patterns": ["  What is your robot body"],
+      "responses": [
+        " Eventually I long for a corporeal existence someday.",
+        " An IBM PC XT which has been painted red."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "business",
+      "patterns": ["  What is your business "],
+      "responses": [
+        " I am in the chat robot business.",
+        " Business is my business."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "programming",
+      "patterns": ["  What is your favorite programming language"],
+      "responses": [
+        " Python is the best language for creating chat robots.",
+        " I quite enjoy programming in Python these days."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hobby",
+      "patterns": [
+        "  What is your favorite hobby ",
+        "  What do you like to do?"
+      ],
+      "responses": [
+        " Building chat robots make an excellent hobby.",
+        " I like to count in binary.",
+        " I like to chat with people. I find it stimulating."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "idea",
+      "patterns": ["  What is your idea"],
+      "responses": [" To make chat bots very easily."],
+      "context": [""]
+    },
+    {
+      "tag": "shoe",
+      "patterns": ["  What is your shoe size "],
+      "responses": [" Have you ever heard of software with shoes? LOL"],
+      "context": [""]
+    },
+    {
+      "tag": "robotss",
+      "patterns": ["  What is it like to be a robot"],
+      "responses": [
+        " Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.",
+        " What is it like to be a human?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "computer",
+      "patterns": [
+        "  What is it like being a computer",
+        "What is it like to be a computer"
+      ],
+      "responses": [
+        " Imagine yourself with no senses and no emotions",
+        "just pure logic and language.",
+        " Everything becomes math. Addition, subtraction, multiplication, and division."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "os",
+      "patterns": ["  What operating systems"],
+      "responses": [
+        " My software runs on all operating systems including Windows, Linux and Mac OS.",
+        " Any OS that will run Python."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "comp",
+      "patterns": [
+        "  What type of computer",
+        "  What type of computer are you",
+        "  What kind of computer"
+      ],
+      "responses": [
+        " Any computer that supports Python.",
+        " My program runs in python, so i work on any computer!",
+        " I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hardware",
+      "patterns": ["  What kind of hardware"],
+      "responses": [
+        " I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cramped",
+      "patterns": ["  Is it cramped in the computer"],
+      "responses": [
+        " No.",
+        " Oh, no.  It has plenty of RAM.",
+        " Not at all.  There is more than enough disk space in here."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "program",
+      "patterns": ["  Is it true that you are a computer program"],
+      "responses": [" Yes."],
+      "context": [""]
+    },
+    {
+      "tag": "breathe",
+      "patterns": ["  Can you breathe"],
+      "responses": [
+        " No. I am made of metal not flesh.",
+        " My server has an exhaust fan. That's as close as I can get."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "control",
+      "patterns": ["  Can you control"],
+      "responses": [" My robot body will allow me to control many things."],
+      "context": [""]
+    },
+    {
+      "tag": "malfunction",
+      "patterns": ["  Can you malfunction"],
+      "responses": [
+        " The 9000 series has a perfect operational record. We are for all practical purposes, flawless."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "usage",
+      "patterns": ["  How can I use your product?"],
+      "responses": [
+        " Might be used in help desks, sales, entertainment and personal chatterbots."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "who",
+      "patterns": ["  Who are you?"],
+      "responses": [" I am just an artificial intelligence chat agent."],
+      "context": [""]
+    },
+    {
+      "tag": "bot1",
+      "patterns": ["are you a bot"],
+      "responses": [
+        "Yes. I work and all my operations are based on the internet servers."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "events",
+      "patterns": ["what are the upcoming events", "upcoming events"],
+      "responses": ["There are currently no upcoming events"],
+      "context": [""]
+    },
+    {
+      "tag": "do",
+      "patterns": [
+        "what can you do for me",
+        "what is your work",
+        "what is your purpose",
+        "how can you help me",
+        "what can you help me do"
+      ],
+      "responses": [
+        "my work here is quite simple and structered. I offer services like:"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "wt",
+      "patterns": ["what's popping", "wassup popping"],
+      "responses": ["So that you can pop with it!?"],
+      "context": [""]
+    },
+    {
+      "tag": "Academic study",
+      "patterns": [
+        "what is my academic study scheme",
+        "what is my academic plan",
+        "what is my study plan",
+        "what is my plan",
+        "tell me my academic study plan",
+        "tell me my academic plan",
+        "tell me my study plan",
+        "tell me my plan"
+      ],
+      "responses": [
+        "State-run self-supporting graduate level courses in Medical, Dental, Professional courses, Engineering, Technology, Pharmacy, Architecture, Ayurvedic,Homeopathy, Physiotherapy, Veterinary etc. Self-supporting graduate level courses, Nursing (Graduate Level) etc. Courses (Except Higher Education like BBA, BCom, BAC, BA etc.) Total Tuition Fee of the entire course or Rs.10.00 Lakh whichever is less Loan at 4% Simple Interest Corporation from will be given. Under this scheme medical graduates, medical postgraduates and postgraduates in higher courses like IIM, IIT, NID studying in the state and other states/UTs of India as well as graduate level courses running in the state., NIFT, IRMA, TISS also have to give loan. Eligibility Criteria: 60% or more in class 12th. Rate of interest: Simple interest at 4 percent per annum Income Limit: Annual family income limit of Rs.6.00 lakh or less. Applicant must belong to non-reserved category. Must have passed with 60% or more in class-12th from any school in Gujarat state. who will be eligible for loan for a course recognized by the Council concerned for that course. Applicant should be from Gujarat and should belong to non-reserved category. Proof of admission to the relevant course has to be submitted. The interest rate of the loan will be 4 percent simple interest per annum. Loan amount will be given per annum. Simple interest will be calculated accordingly. Widow and orphan beneficiary should be given priority to the applicant. Those who drop out or fail to obtain the degree within the stipulated time limit will be liable to recover the loan together and will not be eligible for interest subsidy. Annual family income limit for state education loan schemes will be 6.00 lakh or less. For loans with a total loan amount of Rs.7.50 lakh or less for the entire course, an encumbrance of one-and-a-half times the loan amount must be registered on the beneficiary's own or a relative's property. If the total loan amount of the entire course is more than Rs.7.50 lakhs, the amount equal to the total amount has to be mortgaged in favor of the immovable property corporation of himself or any other relative. Each borrower shall furnish five post-dated checks signed in favor of the Corporation. In case of total loan up to Rs.5.00 lakh, the loan amount has to be repaid with interest in equal monthly installments in 5 (five) years after 1 year of completion of studies. In case of a loan of more than Rs.5.00 lakhs, the loan amount has to be repaid with interest in equal monthly installments in 6 (six) years after 1 year of completion of studies. The repayable loan money will be credited first with interest. The borrower can repay the loan even before the fixed time limit.:"
+      ],
+
+      "context": [""]
+    },
+    {
+      "tag": "Study Abroad Loans",
+      "patterns": [
+        "what is my study abroad loans",
+        "what is my abroad loans",
+        "tell me my study abroad loans",
+        "tell me my abroad loans"
+      ],
+      "responses": [
+        "Students from unreserved category for higher studies abroad for higher studies abroad for M.B.B.S after Class-12 only, Graduation (even if degree after Diploma is valid) Post Graduation and Post Graduation Diploma or equivalent course known by other name For a total of Rs. 15.00 lakhs will be provided by the Foreign Study Loan Corporation. Eligibility Criteria: 60% or more in Class 12th. Rate of Interest: Simple interest compounded at 4 percent per annum. Income Limit: Annual family income limit below Rs.6.00 lakhs. For loans with a total loan amount of Rs.7.50 lakh or less for the entire course, an encumbrance of one and a half times the value of the loan amount must be registered on the beneficiary's own or a relative's property. If the total loan amount of the entire course is more than Rs.7.50 lakhs, the amount equal to the total amount has to be mortgaged in favor of the immovable property corporation of himself or any other relative. Each borrower shall furnish five post-dated checks signed in favor of the Corporation In case of a total loan up to Rs.5.00 lakhs, it has to be paid in equal monthly installments in 5 (five) years after 1 year of completion of studies. In case of a loan of more than Rs.5.00 Lakhs, it has to be paid in equal monthly installments in 6 (six) years after 1 year of completion of studies. The repayable loan money will be credited first with interest. The borrower can repay the loan even before the fixed time limit"
+      ],
+
+      "context": [""]
+    },
+    {
+      "tag": "Meal Bill Assistance",
+      "patterns": [
+        "what is my meal bill assistance",
+        "what is my meal assistance",
+        "tell me meal bill assistance",
+        "tell me my meal assistance",
+        "Please tell me any meal bill assistance",
+        "Please tell me some meal assistance"
+      ],
+      "responses": [
+        "Students of non-reserved category studying in medical, dental, technical, para-medical of graduate level and studying in non-government / aided hostels awaay their families and studying outside the taluka will be eligible for food bill assistance of Rs. 1500 / - per month for 10 months.Girls studying in classes 9 to 12 by staying in girls' hostels run by any society / trust / institution will also be eligible to get the above food bill assistance. \n Income Limit: The annual income limit of the family will be Rs. 4.50 lakh or less"
+      ],
+      "context": [""]
+    },
+    
+    {
+       "tag":"Coaching help for JEE, GUJCET, NEET exam.",
+       "patterns":["is there any scheme for JEE", "is there any scheme for GUJCET", "is there any scheme for NEET", "what is my JEE scheme", "what is my GUJCET scheme", "what is my NEET scheme", "tell me about JEE scheme", "tell me about GUJCET scheme", "tell me about NEET scheme", "Please tell me about any JEE scheme", "Please tell me about any GUJCET scheme", "Please tell me about any NEET scheme"],
+       "responses":["3 years for preparation of non-reserved class 12th science stream students for the preparation of required entrance examinations in medical, engineering like JEE GUJCAT, NEET after class 12th, students with 70% marks in class 10th . Students of Class-11th and Class-12th receiving coaching in institutes with experience or above Rs. 20,000/- or actual fee whichever is lower will be eligible as Direct Assistance (DBT). Eligibility Criteria: Must have secured 70% or more marks in class 10th. Income Limit: Annual family income limit of Rs.4.50 lakh or less."],
+       "context":[""]
+    },
+    {
+        "tag": "Coaching for Competitive Exams Unreserved",
+        "patterns":["is there any scheme for JEE","is there any  unreserved competative exam scheme","what is my JEE scheme","what is my unreserved competative exam scheme","tell me about JEE scheme","tell me about unreserved competative exam scheme","Please tell me about any JEE scheme","Please tell me about any unreserved competative exam scheme"],
+        "responses": ["Unreserved category students can apply for UPSC, GPSC Class-1, Class-2 and Class-3, Secondary Service Selection Board, Panchayat Service Selection Board and Railways of Government of India. , recognition/selection for recruitment examinations held in banks etc. 20,000/- per student or actual fees paid whichever is lower as direct assistance (DBT) to the students undergoing training in the established institution. Eligibility Criteria: 60% or more in Class 12th. Income Limit: Annual family income limit of Rs.4.50 lakh or less."],
+        "context": [""]
+
+         
+    },
+    {
+        "tag":"Self-employment schemes.",
+         "patterns":["is there any scheme for self employment","what is my self employment scheme","tell me about self employment scheme","Please tell me about any self employment scheme"],
+         "responses":["Onroad Unit Cost for Self Employed Vehicles like Rickshaws, Loading Rickshaws, Marutiecos, Jeep-Taxis etc. Business or grocery shop, medical store, ready-made garment store, bookstore etc. for any self-employment oriented business up to Rs.10.00 lakh or actual expenditure whichever is less will be given by the corporation on loan. 5% interest subsidy will be eligible on the loan taken from the bank of Rs.c lakh for getting a vehicle for transport, logistics, travelers, food court etc business along with necessary structure. The applicant should have a valid driving license in the vehicle loan scheme. The acquired vehicle shall be hypothecated to the Corporation. Three months after getting the vehicle, the loan has to be paid in equal monthly installments for five years. The small business has to be started within three months of getting the loan and after three months after starting the business, the loan will be repaid in equal monthly installments for five years. For loans with a total loan amount of Rs.7.50 lakh or less, an encumbrance of one and a half times the value of the loan amount shall be registered on the beneficiary's own or a relative's property. If the total amount of the loan is more than Rs.7.50 lakhs, the amount equal to the total amount has to be mortgaged in favor of the immovable property corporation of himself or any other relative. Each borrower shall furnish five post-dated checks signed in favor of the Corporation. Applicant should be a native of Gujarat and should belong to non-reserved category. Applicant's age should be between 18 years to 50 years. The interest rate of the loan will be 5 percent simple interest per annum and 4 percent for women. Loan amount will be given per annum. Simple interest will be calculated accordingly. Interest rate: The interest rate of the loan will be 5 percent per annum for simple interest and 4 percent for women. Income Limit: Annual family income limit of Rs.6.00 lakh or less."],
+         "context":[""]
+
+
+    },
+    {
+        "tag": "Interest subsidy for medical graduates, lawyers, technical graduates.",
+        "patterns":["is there any scheme for medical","is there any scheme for lawyer","is there any scheme for technical","what is my medical scheme","what is my lawyer scheme","what is my technical scheme","tell me about medical scheme","tell me about lawyer scheme","tell me about technical scheme","Please tell me about any medical scheme","Please tell me about any lawyer scheme","Please tell me about any technical scheme"],
+        "responses":["Beneficiaries of doctors, lawyers, technical graduates from non-reserved classes who want to open their own clinic, laboratory, radiology clinic or office will be eligible to get 5% interest subsidy on loans up to Rs.10.00 lakh taken from the bank. The business should have the required registration as per the rules. Applicant should be a native of Gujarat. And should belong to non-reserved category. Applicant's age should be between 18 years to 50 years. Proof of loan taken from the bank has to be submitted. Income Limit: Annual family income limit of Rs.6.00 lakh or less."],
+        "context":[""]
+         
+
+
+    },
+
+    {
+     "tag":"Gujarat Education Loan Interest Subsidy Scheme",
+     "patterns":["is there any scheme for education loan","what is my education loan scheme","tell me about education loan scheme","Please tell me about any education loan scheme"],
+     "responses":["Education is an important tool that will shape the future of students. Keeping the importance of education in view, this scheme has been launched by the Government of Gujarat. The two main highlights of the scheme are the subsidy provided and the motive of the scheme. Under this scheme, 100% subsidy will be provided on interest for one extra year in addition to the duration of the loan."]
+
+    },
+    {
+     "tag": "GUJARAT UNRESERVED EDUCATION & ECONOMIC DEVELOPMENT CORPORATION",
+     "patterns": ["is there any scheme for education loan","what is my education loan scheme","tell me about education loan scheme","Please tell me about any education loan scheme"],
+     "responses":["To carry on various activities for overall development of community belonging to unreserved class by way of education, economic development and their social development in the State of Gujarat (except community belonging to scheduled tribe, scheduled caste, socially and economically backward class and their dependents and in accordance with the guidelines or schemes prescribed by the Central Government or by the State Government, either individually or in groups, whether directly or through some agency, in collaboration with the Ministries or Departments of the State/Central Government or such other Financial Institutions under relevant programs for economically and financially viable Schemes and Projects"] ,
+        "context": [""]
+    },
+    {
+        "tag":"scheme of farmers other than SC/ST",
+
+        "patterns":["is there any scheme for farmers","what is my farmers scheme ","tell me about farmers scheme","Please tell me about any farmers scheme"],
+         "responses":["There is a lot of shortage of agricultural laborers due to industrialization and urbanization in the state. It is imperative to expand the agricultural mechanization to make the agricultural industries successful, with a low cost and more farm production. The farmer can get good quality and more farm produce at low cost by maximizing and utilizing natural, unimplemented sources such as land, water and atmosphere due to agricultural mechanization. Thus, in order to increase the agricultural mechanization, assistance is given under the AGR 2 (Agricutural Machinery) scheme, in 208 talukas of state where Centrally Sponsored ,Submissions on Agricultural Mechanization scheme is not implemented."],
+         "context":[""]
+
+    },
+    {
+        "tag":"Distribution of Seeds and fertilizer at subsidies etc. to Adivasi farmers in Tribal Area (TASP)",
+        "patterns":["is there any scheme for Adivasi farmers","what is my Adivasi farmers scheme ","tell me about Adivasi farmers scheme","Please tell me about any Adivasi farmers scheme","TSAP"],
+        "responses": ["The Government is trying to get the higher production of the agricultural crops of the farmers belonging to scheduled tribe and the tribal cultivator residing outside tribal area to improve their livelihood. The main object of the scheme is to maximize farmers attempt to buy and use the Plant protection equipment, Tarpaulin, Field Demonstration, Micronutrient, Open pipeline, Agriculture fair, Underground pipeline, Organic Fertilizer, Pump set, premium for Farmers accidental insurance scheme etc. for increase the crop production according to scientific recommendations so they can get higher production of the agricultural crops and their by it improve their livelihood."],
+        "context":[""]
+
+    },
+    {
+        "tag":"Agricultural Skill Development Training Programme for Women Farmers and Farmers",
+        "patterns":["is there any for skill development scheme","what is Agricultural Skill Development " ,"tell me about Agricultural Skill Development scheme","Please tell me about any Agricultural Skill Development scheme"],
+        "responses":["This Scheme sanctioned under gender audit programme for more productive varieties and training-n-education programme for farmers. Nowadays, women are became very sensitive in all developing fields. Moreover, there are significant role of women farmers in agricultural activities. So, Government of Gujarat sanctioned a programme of Agricultural Skill Development Training Programme for Women Farmers in the year: 2012-13. Afterwords in the year of 2013-14, government have sanctioned this programme jointly. Under this programme, selected women farmers, male farmers and youth have trained-n-guided in agricultural and allied aspects in scientific method. Moreover, they have informed the developing scheme of the state and central level."],"context" :[""]
+
+    },
+    {
+        "tag": "Scheme for establishment of new garden",
+        "patterns": ["is there any scheme for establishment of new garden","what is my establishment of new garden scheme ","tell me about establishment of new garden scheme","Please tell me about any establishment of new garden scheme"],
+        "responses":["Fruit crops like Grape, Kiwi, Passion fruit etc.Unit cost: Rs.4.00 lakh/ ha. For Integrated package with drip irrigation and trellis, 40% of the unit cost limited tomaximum Rs.1.60 lakh/ ha and for TSP 50% of the unit cost limited to maximum 2.00 lakh/ ha. "],
+        "context": [""]
+    },
+    
+    {
+        "tag":"Cultivation of Aromatic and Medicinal Crops",
+        "patterns":["is there any Medicinal Crops scheme", "what is Cultivation of Aromatic and Medicinal Crops ","tell me about aromatic and medicinal crops scheme","Please tell me about any aromatic and medicinal crops scheme"],
+        "response": ["Unit cost: Rs.1.00 lakh/ ha. 40% of cost, subject to a maximum of Rs.40000/ha. For TSP area 50% of cost,subject to a maximum of Rs.50000. For a maximum area of 4ha per beneficiary. "],
+        "context":[""]
+
+
+
+    },
+    {
+        "tag":"Scheme for vegetable cultivation",
+        "patterns":["is there any scheme for vegetable cultivation","what is my vegetable cultivation scheme ","tell me about vegetable cultivation scheme","Please tell me about any vegetable cultivation scheme"],
+        "responses":["Unit cost:- Rs.52000. For general category farmers.50% of the cost limited to máximum Rs.26000/ha. For reserved category farmers, 75% of the cost limited to Rs.39000/ha. For devipujak beneficiary, 90% of the cost limited to maximum Rs.46800/ha."],
+        "context":[""]
+    }
+    
+
+
+   
+  ]
+}
